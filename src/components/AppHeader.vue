@@ -33,20 +33,35 @@ export default{
           <a class="nav-link" href="#">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Store</a>
+          <a class="nav-link" href="#">Store <span class="badge text-bg-secondary">new</span></a>
         </li>
         <li class="nav-item">
           <button class="btn btn-primary rounded-3">Schedule a workout</button>
         </li>
-        <i class="fa-solid fa-cart-shopping"></i>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa fa-star"></i>
+        <i class="fa-solid fa-cart-shopping text-white align-items-center"></i>
+        <i class="fa-solid fa-magnifying-glass text-white align-items-center"></i>
       </ul>
     </div>
   </div>
 </nav>
-<div class="jumbotron">
-    
+<div class="jumbotron d-flex align-items-center">
+  <div class="container">
+    <div class="row w-100 h-100">
+      <div class="left col-8  bg-white h-100 bg-transparent text-white">
+        <p>Certified fitness professional</p>
+        <h2>Take control of your health</h2>
+        <div class="">
+          <i class="fa-solid fa-chevron-up"></i>
+          <i class="fa-solid fa-chevron-up"></i>
+          <i class="fa-solid fa-chevron-up"></i>
+          <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet</p>
+        </div>
+        <button class="btn btn-primary">Visit my youtube channel</button>
+        <button class="btn btn-primary">Buy Avada today -></button>
+      </div>
+      <div class="right col-4 text-center bg-black h-100 text-white">Right side</div>
+    </div>
+  </div>
 </div>
 </template>
 <style lang="scss">
@@ -55,9 +70,11 @@ export default{
 }
 
 .jumbotron{
+  background-image: url(/public/images/slider82x-scaled.jpg);
     width: 100%;
     background-color: purple;
     height: 670px;
-}
+    background-size: cover;
+  }
 
 </style>
