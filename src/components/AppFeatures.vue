@@ -6,14 +6,76 @@ export default{
 
 <template> 
 <div id="features" class="container-fluid">
-
-</div> 
-     
+    <div class="container">
+        <div class="row row-feat justify-content-center gap-4">
+            <div class="col-3 card-feat position-relative">
+                <img class="img-fluid" src="/public/images/service6-2x.jpg" alt="">
+                <div class="position-absolute bottom-0 left-0">
+                    <span>chevrons</span><span>chevrons</span><span>chevrons</span>
+                    <h4>Crossfit Workout</h4>
+                    <small>Push your limits</small>
+                </div>
+            </div>
+            <div class="col-3 card-feat position-relative">
+                <img class="img-fluid" src="/public/images/box1-2x.jpg" alt="">
+                <div class="position-absolute bottom-0 left-0">
+                    <span>chevrons</span><span>chevrons</span><span>chevrons</span>
+                    <h4>Crossfit Workout</h4>
+                    <small>Push your limits</small>
+                </div>
+            </div>
+            <div class="col-3 card-feat position-relative">
+                <img class="img-fluid" src="/public/images/box3-2x.jpg" alt="">
+                <div class="position-absolute bottom-0 left-0">
+                    <span>chevrons</span><span>chevrons</span><span>chevrons</span>
+                    <h4>Crossfit Workout</h4>
+                    <small>Push your limits</small>
+                </div>
+            </div>
+            <div>
+                <div class="col-8 m-auto text-white">
+                    <div>"How you respond to the challenge in the second half will determine what you become after the game, whether you are a winner or a loser."   
+                    </div>
+                        <div class="">
+                            <i class="fa-solid fa-chevron-up"></i>
+                            <i class="fa-solid fa-chevron-up"></i>
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                        <div class="">
+                            <span></span>
+                            <span>Brad Johnson</span>
+                            <span>Las Vegas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
 </template>
 
 <style lang="scss">
 #features{
-    background-color: aquamarine;
-    height: 1020px
+    background: linear-gradient(150deg, hsl(234, 100%,calc(63% - 20%), 100%) 0%, hsla(357, 100%,calc(63% - 20%), 100%) 100%);
+    height: 1020px;
+
+    .row-feat{
+        transform: translateY(-80px);
+    }
+
+    .card-feat{
+
+    overflow: hidden;
+    
+
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        border-bottom-right-radius: 40px;
+    }
 }
+
+}
+
+
 </style>
