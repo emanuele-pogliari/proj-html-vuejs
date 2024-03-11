@@ -56,7 +56,7 @@ export default{
           <i class="fa-solid fa-chevron-up"></i>
         </div>
           <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet</p>
-        
+
         <button class="btn btn-primary">Visit my youtube channel</button>
         <button class="btn btn-primary">Buy Avada today -></button>
       </div>
