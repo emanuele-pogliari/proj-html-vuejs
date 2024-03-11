@@ -7,6 +7,23 @@ export default{
 <template> 
 <div class="container-fluid" id="testimonial">
 
+<div class="testimonial-container d-flex align-items-center">
+  <div class="container">
+    <div class="row w-100 h-100 p-5 text-center">
+      <div class="left col-6 m-auto bg-white h-100 bg-transparent text-white">
+        <p>"I've failed over and over again in my life. And that is why I succeed."</p>
+        <div class="">
+          <i class="fa-solid fa-chevron-up"></i>
+          <i class="fa-solid fa-chevron-up"></i>
+          <i class="fa-solid fa-chevron-up"></i>
+        </div>
+          <p>Arcu auctor gravida nisl, congue sit nisi tincidunt eget proin. In lacinia lacus donec sed massa in ipsum eros, tristique. Gravida suspendisse etiam in iaculis</p>
+        <button class="btn btn-primary">Buy Avada today -></button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 </div> 
      
@@ -14,7 +31,9 @@ export default{
 
 <style lang="scss">
 #testimonial{
-    background-color: goldenrod;
     height: 775px;
+    background-image: url(/public/images/banner2-2x.jpg);
+    width: 100%;
+    background-size: cover;
 }
 </style>
