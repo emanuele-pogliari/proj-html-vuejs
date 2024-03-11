@@ -42,7 +42,6 @@ export default{
 
 <style scoped lang="scss">
 #videos{
-    background-color: antiquewhite;
     height: 705px;
 
     .single-video{

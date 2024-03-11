@@ -29,8 +29,6 @@ export default{
             <a href="">Schedule a workout</a> 
         </div>
     </div>
-
-
 </div> 
      
 </template>
