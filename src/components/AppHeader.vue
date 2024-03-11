@@ -40,12 +40,13 @@ export default{
         </li>
         <i class="fa-solid fa-cart-shopping"></i>
         <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa fa-star"></i>
       </ul>
     </div>
   </div>
 </nav>
 <div class="jumbotron">
-    <!-- <img class="img-fluid" src="/images/slider82x-scaled.jpg" alt=""> -->
+    
 </div>
 </template>
 <style lang="scss">
@@ -56,7 +57,7 @@ export default{
 .jumbotron{
     width: 100%;
     background-color: purple;
-    height: 500px;
+    height: 670px;
 }
 
 </style>
