@@ -10,8 +10,8 @@ export default{
     <div class="footer-top d-flex justify-content-center ">
         <div class="single-col p-0">
             <img src="/public/images/logo.png" alt="">
-            <p>Ac aliquam neque sagittis diam faucibus vitae purus turpis phasellus. Pallentesque consectetur amet purus ultrices mauris.</p>
-            <div>
+            <p class="text-logo">Ac aliquam neque sagittis diam faucibus vitae purus turpis phasellus. Pallentesque consectetur amet purus ultrices mauris.</p>
+            <div class="socials">
                 <i class="fa-brands fa-facebook-f"></i>
                 <i class="fa-brands fa-x-twitter"></i>
                 <i class="fa-brands fa-square-instagram"></i>
@@ -31,13 +31,13 @@ export default{
         </div>
         <div class="contacts single-col p-0">
             <h5 class="pb-3 text-uppercase">Contact informations</h5>
-            <p>4746 Tipple Road Michigan 48449</p>
-            <p>Mobile: 1.800.000.0000</p>
+            <p class="address">4746 Tipple Road Michigan 48449</p>
+            <p class="phone">Mobile: 1.800.000.0000</p>
             <p>Email: info@your-company.com</p>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>C Copyright 2012 - 2020 | Avada Website Builder by ThemeFusion|All Rights Reserved|Powered by WordPress</p>
+        <p class="text-bottom">C Copyright 2012 - 2020 | Avada Website Builder by ThemeFusion|All Rights Reserved|Powered by WordPress</p>
     </div>
 </div>
 </footer> 
@@ -60,9 +60,22 @@ export default{
         .contacts{
             font-size: 20px;
         }
+        img{
+            margin-bottom: 15px;
+        }
 
-    }
+        .text-logo{
+            margin-bottom: 50px;
+            font-size: 20px;
+            color: $color3;
+        }
 
+        .socials{
+            display: flex;
+            justify-content: center;
+            gap:20px;
+            color:$color5;
+        }
 
     li{
         padding-top: 10px;
@@ -76,5 +89,23 @@ export default{
     .single-col{
         width: calc(100% / 3);
     }
+    .address{
+        color:$color3;
+    }
+
+    .phone{
+        margin-bottom: 0;
+    }
+}
+
+.footer-bottom{
+    padding: 20px;
+    .text-bottom{
+        margin-top: 16px;
+    }
+    
+
+}
+
 }
 </style>

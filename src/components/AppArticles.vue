@@ -7,7 +7,7 @@ export default{
 <template> 
 <div class="container-fluid" id="articles">
     <div class="container">
-    <div class="row pt-5">
+    <div class="row">
         <div class="col d-flex px-0 pb-4 justify-content-between align-items-center ">
             <h3>Featured Playlist</h3>
             <a class="px-3 py-1 text-black">View all videos ></a>
@@ -48,14 +48,15 @@ export default{
     .video-container{
         display: flex;
         flex-direction: row;
-        gap: 20px;
+        gap: 30px;
    
     .single-video{
-        width: calc(100% / 3 - 20px * 3 / 2);
+        width: calc(100% / 3 - 30px * 3 / 2);
         img{
         border-radius: 4px;
         overflow: hidden;
         }
+
     }
 
     }
