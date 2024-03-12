@@ -1,7 +1,11 @@
 @import 'node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+@import './src/styles/variables';
 
 body {
     font-family: "Barlow Semi Condensed";
 }
 
-// button
+a {
+    text-decoration: none;
+    color: $color2;
+}
