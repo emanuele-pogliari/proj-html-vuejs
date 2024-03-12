@@ -6,8 +6,8 @@ export default{
 
 <template> 
 <footer class="container" id="footer">
-    <div class="row footer-top">
-        <div class="col-4">
+    <div class="footer-top text-center d-flex justify-content-center ">
+        <div class="single-col p-0">
             <img src="/public/images/logo.png" alt="">
             <p>Ac aliquam neque sagittis diam faucibus vitae purus turpis phasellus. Pallentesque consectetur amet purus ultrices mauris.</p>
             <div>
@@ -18,9 +18,9 @@ export default{
                 <i class="fa-brands fa-linkedin-in"></i>
             </div>
         </div>
-        <div class="col-4">
+        <div class="p-0">
             <h5>Recent Posts</h5>
-            <ul>
+            <ul class="list-unstyled">
                 <li>The best protein shake</li>
                 <li>Ultimate cardio workout</li>
                 <li>New juices available now</li>
@@ -28,7 +28,7 @@ export default{
                 <li>20 best healthy recipes</li>
             </ul>
         </div>
-        <div class="col-4">
+        <div class="p-0">
             <h5>Contact informations</h5>
             <p>4746 Tipple Road Michigan 48449</p>
             <p>Mobile: 1.800.000.0000</p>
@@ -46,5 +46,9 @@ export default{
 #footer{
     background-color:greenyellow;
     height: 665px;
+
+    .single-col{
+        width: calc(100% / 3);
+    }
 }
 </style>

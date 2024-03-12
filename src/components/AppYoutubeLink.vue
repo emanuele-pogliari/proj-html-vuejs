@@ -7,7 +7,7 @@ export default{
 <template> 
 <div class="container-fluid p-0" id="youtube">
     <div class="row h-100 m-0 p-0">
-        <div class="col-left">
+        <div class="col-left p-0">
             <img class="img-fluid" src="/public/images/service15-2x.jpg" alt="">
         </div>
         <div class="col-right">
@@ -33,6 +33,7 @@ export default{
 
 <style scoped lang="scss">
 #youtube{
+    max-width: 1920px;
 
     h3{
         font-size: 28px;
