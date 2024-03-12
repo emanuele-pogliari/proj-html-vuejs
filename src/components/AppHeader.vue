@@ -19,7 +19,7 @@ export default{
 
 <template>
 <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
-  <div class="container">
+  <div class="container p-0">
     <a class="navbar-brand" href="#"><img src="/public/images/logo.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -31,7 +31,7 @@ export default{
           <a class="nav-link" href="#">Store <span class="badge ms-2 rounded-1 py-1 ">new</span></a>
         </li>
         <li class="nav-item">
-          <button class="btn my-btn rounded-pill text-white">Schedule a workout</button>
+          <button class="btn btn-nav rounded-pill text-white">Schedule a workout</button>
         </li>
         <i class="fa-solid fa-cart-shopping text-white align-items-start "></i>
         <i class="fa-solid fa-magnifying-glass text-white align-items-center"></i>
@@ -40,16 +40,16 @@ export default{
   </div>
 </nav>
 <div class="jumbotron d-flex align-items-center">
-  <div class="container">
+  <div class="container p-0">
     <div class="row w-100 h-100 d-flex align-items-center">
-      <div class="left col-8  bg-white  bg-transparent text-white">
+      <div class="left col-8 p-0  bg-white  bg-transparent text-white">
         <p class="text-1">Certified fitness professional</p>
         <h2 class="text-2 mb-4">Take control of your health</h2>
         <div class="mb-4 col-1">
           <img class="img-fluid" src="/public/images/separator-yellow.png" alt="">
         </div>
           <p class="mb-5">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet</p>
-        <button class="btn my-btn rounded-pill me-2">Visit my youtube channel</button>
+        <button class="btn my-btn rounded-pill me-2"><i class="me-2 fa-brands fa-youtube"></i>Visit my youtube channel</button>
         <button class="btn bg-black rounded-pill">Buy Avada today -></button>
       </div>
       <div class="right col-4 text-center h-100 text-white">
@@ -67,14 +67,13 @@ export default{
       background-color: $color6;
       color: $color1;
     }
-
-}
-.my-btn {
-    background-color: $color4;
-    &hover{
-      background-color: $color1;
-      color:$color1;
+    .btn-nav{
+      font-size:14px;
+      padding: 13px 29px;
+      line-height: 17px;
+      background-color: $color4;
     }
+
 }
 .jumbotron{
   background-image: url(/public/images/slider82x-scaled.jpg);

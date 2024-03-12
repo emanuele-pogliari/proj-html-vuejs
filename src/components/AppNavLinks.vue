@@ -3,7 +3,7 @@ export default{
     name: 'AppNavlinks',
 
     props:{
-        links: Array,
+        links: String,
     }
 }
 </script>

@@ -3,7 +3,7 @@ export default{
     name: 'AppFooterLinks',
 
     props:{
-        Flinks: Array,
+        Flinks: String,
     }
 }
 </script>

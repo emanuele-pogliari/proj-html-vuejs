@@ -51,7 +51,7 @@ export default{
 
     .col-left{
         width:50%;
-        height:100%;
+        height:778px;
         margin-top: -60px;
     }
 
