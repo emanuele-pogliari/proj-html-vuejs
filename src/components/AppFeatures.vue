@@ -7,7 +7,7 @@ export default{
 <template> 
 <div id="features">
     <div class="container">
-        <div class="row row-feat justify-content-center gap-3 m-0 p-0">
+        <div class="row row-feat justify-content-between gap-3 m-0 p-0">
             <div class="col-3 card-feat position-relative m-0 p-0">
                 <img class="img-fluid" src="/public/images/service6-2x.jpg" alt="">
                 <div class="position-absolute bottom-0 left-0">
@@ -53,7 +53,7 @@ export default{
     </div>   
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 #features{
     background: linear-gradient(150deg, hsl(234, 100%,calc(63% - 20%), 100%) 0%, hsla(357, 100%,calc(63% - 20%), 100%) 100%);
     height: 1020px;
@@ -63,6 +63,7 @@ export default{
     }
 
     .card-feat{
+    width: calc(100% / 3 - 30px * 3 / 2);
     overflow: hidden;
 
     img{

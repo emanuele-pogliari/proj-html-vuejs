@@ -64,7 +64,7 @@ export default{
   </div>
 </div>
 </template>
-<style lang="scss">
+<style scoped lang="scss">
 @use '/src/styles/variables.scss' as *;
 .navbar{
     height: 100px;

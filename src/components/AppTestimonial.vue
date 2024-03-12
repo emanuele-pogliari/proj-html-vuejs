@@ -29,7 +29,7 @@ export default{
      
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 #testimonial{
     height: 775px;
     background-image: url(/public/images/banner2-2x.jpg);

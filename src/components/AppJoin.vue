@@ -28,7 +28,7 @@ export default{
      
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 @use '/src/styles/variables.scss' as *;
 #join{
     background-color: coral;

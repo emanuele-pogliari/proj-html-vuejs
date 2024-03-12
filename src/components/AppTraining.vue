@@ -35,7 +35,7 @@ export default{
      
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 @use '/src/styles/variables.scss' as *;
 #training{
     background-color: black;

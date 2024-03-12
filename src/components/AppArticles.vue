@@ -5,48 +5,59 @@ export default{
 </script>
 
 <template> 
-<div class="container" id="articles">
-    <div class="row">
-        <div class="col d-flex justify-content-between">
-            <div>Latest Articles</div>
-            <div>Read all articles</div>
+<div class="container-fluid" id="articles">
+    <div class="container">
+    <div class="row pt-5">
+        <div class="col d-flex px-0 pb-4 justify-content-between align-items-center ">
+            <h3>Featured Playlist</h3>
+            <a class="px-3 py-1 text-black">View all videos ></a>
         </div>
-        <div class="article-container d-flex">
-            <div class="col-4 px-4 single-article">
-                <img class="img-fluid" src="/public/images/blog4-2x.jpg" alt="">
-                <div>
-                    <p>The best protein shake</p>
-                    <small>Published on: November 26th, 2019 | 2 comments</small>
+        <div class="video-container p-0 justify-content-between ">
+            <div class="single-video position-relative">
+                <img class="img-fluid" src="/public/images/video2-2x.jpg" alt="">
+                <div class="text-box text-center d-flex flex-column mt-4">
+                    <p class="mb-2 fs-4">Thighs & glute workout</p>
+                    <small class="sub-text fs-5">Increase your mobility</small>
                 </div>
             </div>
-            <div class="col-4 px-4 single-article">
-                <img class="img-fluid" src="/public/images/blog1-2x.jpg" alt="">
-                <div>
-                    <p>Ultimate cardio workout</p>
-                    <small>Published on: November 26th, 2019 | 0 comments</small>
+            <div class="single-video position-relative">
+                <img class="img-fluid" src="/public/images/video7-2x.jpg" alt="">
+                <div class="text-box text-center d-flex flex-column mt-4">
+                    <p class="mb-2 fs-4">Lift, firm & perk up</p>
+                    <small class="sub-text fs-5">Feel young again</small>
                 </div>
             </div>
-            <div class="col-4 px-4 single-article">
-                <img class="img-fluid" src="/public/images/blog3-2x.jpg" alt="">
-                <div>
-                    <p>New juices available now</p>
-                    <small>Published on: November 26th, 2019 | 0 comments</small>
+            <div class="single-video position-relative">
+                <i class="play-btn fa-solid fa-play p-3 rounded-circle bg-white position-absolute "></i>
+                <img class="img-fluid" src="/public/images/video9-2x.jpg" alt="">
+                <div class="text-box text-center d-flex flex-column mt-4">
+                    <p class="mb-2 fs-4">Slim & trim your waist</p>
+                    <small class="sub-text fs-5">Increase your mobility</small>
                 </div>
             </div>
         </div>
     </div>
-
+</div>
 </div> 
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 #articles{
-    height: 695px;
+    padding: 110px 130px;
 
-    .single-article{
+    .video-container{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+   
+    .single-video{
+        width: calc(100% / 3 - 20px * 3 / 2);
         img{
         border-radius: 4px;
+        overflow: hidden;
         }
+    }
+
     }
 }
 </style>

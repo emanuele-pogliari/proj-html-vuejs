@@ -18,7 +18,7 @@ export default{
      
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 #highlighted{
     height: 640px;
     background-image:url('/public/images/banner14-2x.jpg');

@@ -52,7 +52,7 @@ export default{
     .col-left{
         width:50%;
         height:100%;
-        transform: translateY(-60px);
+        margin-top: -60px;
     }
 
     .col-right{
