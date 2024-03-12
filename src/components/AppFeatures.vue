@@ -7,7 +7,8 @@ export default{
 <template> 
 <div id="features">
     <div class="container">
-        <div class="row row-feat justify-content-between gap-3 m-0 p-0">
+        <div class="row row-feat justify-content-between text-white gap-3 m-0 p-0">
+
             <div class="col-3 card-feat position-relative m-0 p-0">
                 <img class="img-fluid" src="/public/images/service6-2x.jpg" alt="">
                 <div class="position-absolute bottom-0 left-0">
@@ -16,6 +17,7 @@ export default{
                     <small>Push your limits</small>
                 </div>
             </div>
+
             <div class="col-3 card-feat position-relative">
                 <img class="img-fluid" src="/public/images/box1-2x.jpg" alt="">
                 <div class="position-absolute bottom-0 left-0">
@@ -24,6 +26,7 @@ export default{
                     <small>Push your limits</small>
                 </div>
             </div>
+
             <div class="col-3 card-feat position-relative m-0 p-0">
                 <img class="img-fluid" src="/public/images/box3-2x.jpg" alt="">
                 <div class="position-absolute bottom-0 left-0">
@@ -32,14 +35,13 @@ export default{
                     <small>Push your limits</small>
                 </div>
             </div>
+
             <div>
-                <div class="col-8 m-auto text-white">
-                    <div>"How you respond to the challenge in the second half will determine what you become after the game, whether you are a winner or a loser."   
-                    </div>
+                <div class="col-10 text-white">
+                    <p class="quote text-center ">"How you respond to the challenge in the second half will determine what you become after the game, whether you are a winner or a loser."   
+                    </p>
                         <div class="">
-                            <i class="fa-solid fa-chevron-up"></i>
-                            <i class="fa-solid fa-chevron-up"></i>
-                            <i class="fa-solid fa-chevron-up"></i>
+                            
                         </div>
                         <div class="">
                             <span></span>
@@ -72,6 +74,10 @@ export default{
         border-bottom-right-radius: 40px;
     }
 }
+    .quote{
+        font-size:48px;
+        line-height: 1.2;
+    }
 
 }
 

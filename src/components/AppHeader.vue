@@ -54,8 +54,8 @@ export default{
           <img class="img-fluid" src="/public/images/separator-yellow.png" alt="">
         </div>
           <p class="mb-5">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet</p>
-        <button class="btn btn-primary my-btn rounded-pill me-2">Visit my youtube channel</button>
-        <button class="btn btn-primary bg-black rounded-pill">Buy Avada today -></button>
+        <button class="btn my-btn rounded-pill me-2">Visit my youtube channel</button>
+        <button class="btn bg-black rounded-pill">Buy Avada today -></button>
       </div>
       <div class="right col-4 text-center h-100 text-white">
         <i class="play-btn fa-solid fa-play p-5 rounded-circle bg-white"></i>
@@ -76,6 +76,10 @@ export default{
 }
 .my-btn {
     background-color: $color4;
+    &hover{
+      background-color: $color1;
+      color:$color1;
+    }
 }
 .jumbotron{
   background-image: url(/public/images/slider82x-scaled.jpg);

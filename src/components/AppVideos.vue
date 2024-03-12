@@ -5,7 +5,8 @@ export default{
 </script>
 
 <template> 
-<div class="container p-0" id="videos">
+<div class="container-fluid" id="videos">
+    <div class="container">
     <div class="row">
         <div class="col d-flex px-0 pb-4 justify-content-between align-items-center ">
             <h3>Featured Playlist</h3>
@@ -36,14 +37,14 @@ export default{
             </div>
         </div>
     </div>
-
+</div>
 </div> 
      
 </template>
 
 <style scoped lang="scss">
 #videos{
-    height: 705px;
+    padding: 110px 130px;
 
     .video-container{
         display: flex;
