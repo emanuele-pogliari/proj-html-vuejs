@@ -53,7 +53,7 @@ export default{
         <button class="btn bg-black rounded-pill">Buy Avada today -></button>
       </div>
       <div class="right col-4 text-center h-100 text-white">
-        <i class="play-btn fa-solid fa-play p-5 rounded-circle bg-white"></i>
+        <i class="play-btn-big fa-solid fa-play p-5 rounded-circle bg-white"></i>
       </div>
     </div>
   </div>
@@ -81,10 +81,7 @@ export default{
     height: 670px;
     background-size: cover;
     
-    .play-btn{
-      color: $color4;
-      font-size: 17px;
-    }
+    
 
     .text-1{
       font-size:27px;

@@ -6,10 +6,13 @@ export default{
 
 <template> 
 <div class="container-fluid p-0" id="youtube">
-    <div class="row h-100 m-0 p-0">
-        <div class="col-left p-0">
+    <div class="row m-0 p-0">
+        
+        <div class="col-left p-0 d-flex position-relative ">
+            <i class="position-absolute play-btn-big fa-solid fa-play p-5 rounded-circle bg-white"></i>
             <img class="img-fluid" src="/public/images/service15-2x.jpg" alt="">
         </div>
+        
         <div class="col-right">
             <h3>Tune up your workouts</h3>
             <p>The best health & fitness advice online</p>
@@ -24,7 +27,7 @@ export default{
                 </div>
             </div>
             <p class="text-desc">Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo integer sit pellentesque.</p>
-            <button class="btn btn-danger rounded-pill"><i class="fa-brands fa-youtube"></i>Visit my Youtube channel</button>
+            <button class="btn my-btn rounded-pill"><i class="me-2 fa-brands fa-youtube"></i>Visit my Youtube channel</button>
         </div>
     </div>
 </div> 
@@ -32,11 +35,13 @@ export default{
 </template>
 
 <style scoped lang="scss">
+@use '/src/styles/variables.scss' as *;
 #youtube{
     max-width: 1920px;
 
     h3{
         font-size: 28px;
+        color:$color4;
     }
 
     p{
@@ -53,11 +58,22 @@ export default{
         width:50%;
         height:778px;
         margin-top: -60px;
+
+        .play-btn-big{
+            top: 42%;
+            left:44%;
+        }
     }
 
     .col-right{
         width:50%;
         padding: 135px;
+
+        .my-btn{
+            background-color:$color5;
+        }
+        
+        
     }
 
 

@@ -35,31 +35,28 @@ export default{
                     <small>Push your limits</small>
                 </div>
             </div>
-
-            <div>
-                <div class="col-10 text-white">
+                <div class="quote-container col-10 px-4 mx-auto text-white d-flex flex-column align-items justify-content-between">
                     <p class="quote text-center ">"How you respond to the challenge in the second half will determine what you become after the game, whether you are a winner or a loser."   
                     </p>
                         <div class="">
                             
                         </div>
-                        <div class="">
-                            <span></span>
-                            <span>Brad Johnson</span>
-                            <span>Las Vegas</span>
+                        <div class="info-quote text-center">
+                            <span><img src="/public/images/avatar-1-2x.jpg" alt=""></span>
+                            <span class="name">Brad Johnson</span>
+                            <span class="location">Las Vegas</span>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     </div>   
 </template>
 
 <style scoped lang="scss">
+@use '/src/styles/variables.scss' as *;
 #features{
     background: linear-gradient(150deg, hsl(234, 100%,calc(63% - 20%), 100%) 0%, hsla(357, 100%,calc(63% - 20%), 100%) 100%);
-    height: 1020px;
-
+    padding-bottom: 100px;
     .row-feat{
         transform: translateY(-80px);
     }
@@ -68,18 +65,32 @@ export default{
     width: calc(100% / 3 - 30px * 3 / 2);
     overflow: hidden;
 
-    img{
-        height: 100%;
-        border-radius: 4px;
-        border-bottom-right-radius: 40px;
+        img{
+            height: 100%;
+            border-radius: 4px;
+            border-bottom-right-radius: 40px;
+        }
     }
+
+.quote-container{
+    padding-top: 100px;
 }
-    .quote{
+
+.quote{
         font-size:48px;
         line-height: 1.2;
     }
 
+    .info-quote{
+        img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        .name, .location{
+            padding: 0 10px;
+            font-size: 21px;
+        }
+    }
 }
-
-
 </style>
