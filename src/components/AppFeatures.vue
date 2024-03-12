@@ -5,10 +5,10 @@ export default{
 </script>
 
 <template> 
-<div id="features" class="container-fluid">
+<div id="features">
     <div class="container">
-        <div class="row row-feat justify-content-center gap-4">
-            <div class="col-3 card-feat position-relative">
+        <div class="row row-feat justify-content-center gap-3 m-0 p-0">
+            <div class="col-3 card-feat position-relative m-0 p-0">
                 <img class="img-fluid" src="/public/images/service6-2x.jpg" alt="">
                 <div class="position-absolute bottom-0 left-0">
                     <span>chevrons</span><span>chevrons</span><span>chevrons</span>
@@ -24,7 +24,7 @@ export default{
                     <small>Push your limits</small>
                 </div>
             </div>
-            <div class="col-3 card-feat position-relative">
+            <div class="col-3 card-feat position-relative m-0 p-0">
                 <img class="img-fluid" src="/public/images/box3-2x.jpg" alt="">
                 <div class="position-absolute bottom-0 left-0">
                     <span>chevrons</span><span>chevrons</span><span>chevrons</span>
@@ -63,12 +63,9 @@ export default{
     }
 
     .card-feat{
-
     overflow: hidden;
-    
 
     img{
-        width: 100%;
         height: 100%;
         border-radius: 4px;
         border-bottom-right-radius: 40px;

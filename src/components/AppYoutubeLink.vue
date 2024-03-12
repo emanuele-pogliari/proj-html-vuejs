@@ -6,15 +6,25 @@ export default{
 
 <template> 
 <div class="container-fluid p-0" id="youtube">
-    <div class="row m-0 h-100">
-        <div class="left col-6 p-0 m-0">
+    <div class="row h-100 m-0 p-0">
+        <div class="col-left">
             <img class="img-fluid" src="/public/images/service15-2x.jpg" alt="">
         </div>
-        <div class="col-6 p-0 m-0">
-            <div>Tune up your workouts</div>
-            <h3>The best health & fitness advice online</h3>
-            <p>Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo integer sit pellentesque.</p>
-            <button class="btn btn-danger">Visit my Youtube channel</button>
+        <div class="col-right">
+            <h3>Tune up your workouts</h3>
+            <p>The best health & fitness advice online</p>
+            <div class="d-flex">
+                <img class="unamed" src="/public/images/unnamed.jpg" alt="">
+                <div class="d-flex flex-column ">
+                    <small>ThemeFusion</small>
+                    <div class="d-flex">
+                        <div>Youtube</div>
+                        <div>999+</div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-desc">Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo integer sit pellentesque.</p>
+            <button class="btn btn-danger rounded-pill"><i class="fa-brands fa-youtube"></i>Visit my Youtube channel</button>
         </div>
     </div>
 </div> 
@@ -23,14 +33,32 @@ export default{
 
 <style scoped lang="scss">
 #youtube{
-    height: 805px;
 
-    .left{
+    h3{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 62px;
+        font-weight: 500;
+    }
+
+    .text-desc{
+        font-size: 23px;
+        color:#98939F;
+    }
+
+    .col-left{
+        width:50%;
         height:100%;
         transform: translateY(-60px);
-        
-        
     }
+
+    .col-right{
+        width:50%;
+        padding: 135px;
+    }
+
 
     img{
         width: 100%;
@@ -39,6 +67,10 @@ export default{
         border-bottom-right-radius: 40px;
         object-fit: cover;
         overflow: hidden;
+    }
+
+    .unamed{
+        width:41px
     }
 }
 
