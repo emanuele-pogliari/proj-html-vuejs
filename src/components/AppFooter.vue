@@ -1,6 +1,19 @@
 <script>
+import {store} from '../store.js';
+import AppFooterLinks from './AppFooterLinks.vue';
+
 export default{
     name: 'AppFooter',
+    
+    components:{
+        AppFooterLinks,
+    },
+
+    data() {
+        return {
+            store,
+        }
+    },
 }
 </script>
 
@@ -22,11 +35,7 @@ export default{
         <div class="single-col p-0">
             <h5 class="text-uppercase">Recent Posts</h5>
             <ul class="list-unstyled">
-                <li><a href="">> The best protein shake</a></li>
-                <li><a href="">> Ultimate cardio workout</a></li>
-                <li><a href="">> New juices available now</a></li>
-                <li><a href="">> Tips to find training partners</a></li>
-                <li><a href="">> 20 best healthy recipes</a></li>
+                <AppFooterLinks v-for="flink in store.footerLinks" :Flinks="flink"></AppFooterLinks>
             </ul>
         </div>
         <div class="contacts single-col p-0">
@@ -37,7 +46,7 @@ export default{
         </div>
     </div>
     <div class="footer-bottom">
-        <p class="text-bottom">C Copyright 2012 - 2020 | Avada Website Builder by ThemeFusion|All Rights Reserved|Powered by WordPress</p>
+        <p class="text-bottom">&copy Copyright 2012 - 2020 | Avada Website Builder by ThemeFusion|All Rights Reserved|Powered by WordPress</p>
     </div>
 </div>
 </footer> 

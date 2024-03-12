@@ -6,7 +6,7 @@ export default{
 
 <template> 
 <div class="container-fluid p-0" id="highlighted">
-    <div class="img-section position-relative ">
+    <div class="position-relative section-high">
         <div class="position-absolute top-50 start-50 text-white translate-middle-x text-center">
             <div>play</div>
             <div class="fs-1">Crossifit Workout of the day</div>
@@ -19,15 +19,40 @@ export default{
 </template>
 
 <style scoped lang="scss">
-#highlighted{
-    height: 640px;
-    background-image:url('/public/images/banner14-2x.jpg');
-    background-size: cover;
-    
-    .img-section{
-        
-    }
+@use '/src/styles/variables.scss' as *;
 
-}
+
+.container-fluid {
+    width: 100%;
+    height: 640px; /* Altezza desiderata */
+    background-image: linear-gradient(151deg, hsl(234, 100%, 43%) 0%, hsl(357, 100%, 43%) 100%), url('/public/images/banner14-2x.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .section-high {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+
+
+
+
+
+// .section-high{
+//     background: url('/public/images/banner14-2x.jpg'), linear-gradient(151deg, rgba(255, 0, 0, 0.5) 35%, rgba(0, 0, 255, 0.5) 100%);
+
+//     height: 640px;
+//     // background:linear-gradient(151deg, $color4 35%, $color5 100%);
+//     // background-image: url('/public/images/banner14-2x.jpg');
+//     background-size: cover;
+//     mix-blend-mode: multiply;
+
+// }
 
 </style>

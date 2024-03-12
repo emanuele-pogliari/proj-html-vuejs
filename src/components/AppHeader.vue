@@ -1,6 +1,18 @@
 <script>
+import {store} from '../store.js';
+import AppNavLinks from './AppNavLinks.vue';
+
 export default{
     name: 'AppHeader',
+
+    components: {
+      AppNavLinks,
+    },
+    data() {
+      return {
+        store,
+      }
+    },
 }
 </script>
 
@@ -14,24 +26,7 @@ export default{
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav mb-2 mb-lg-0 d-flex gap-4 align-items-center">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Videos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
-        </li>
+        <AppNavLinks v-for="link in store.navLinks" :links="link"></AppNavLinks>
         <li class="nav-item">
           <a class="nav-link" href="#">Store <span class="badge ms-2 rounded-1 py-1 ">new</span></a>
         </li>
