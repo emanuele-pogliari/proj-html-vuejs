@@ -5,21 +5,21 @@ export default{
 </script>
 
 <template> 
-<div class="container-fluid" id="join">
+<div class="container-fluid p-0" id="join">
 <div class="mail d-flex align-items-center">
   <div class="container">
     <div class="row w-100 h-100">
       <div class="left col-8  bg-white h-100 bg-transparent text-white">
-        <p>Join our mailing list today</p>
-        <h2>Insider offers & flash sales in your inbox every week.</h2>
-        <div class="">
-          <i class="fa-solid fa-chevron-up"></i>
-          <i class="fa-solid fa-chevron-up"></i>
-          <i class="fa-solid fa-chevron-up"></i>
+        <h3 class="text-danger">Join our mailing list today</h3>
+        <p class="text-desc">Insider offers & flash sales in your inbox every week.</p>
+        <div class="mb-4 col-1">
+          <img class="img-fluid" src="/public/images/separator-yellow.png" alt="">
         </div>
-        <input type="email" placeholder="Insert your mail...">
-        <button class="btn btn-primary">Subscribe -></button>
-        <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet</p>
+        <input class="form-control w-50 rounded-4 d-inline-block me-3" type="email" placeholder="Insert your mail...">
+        <button class="my-btn px-5  btn rounded-pill text-white">Subscribe</button>
+        <div class="col-9 mt-3">
+          <p class="sub-text">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet, consectetur adipiscing elit sed porttitor lectus.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -29,6 +29,7 @@ export default{
 </template>
 
 <style lang="scss">
+@use '/src/styles/variables.scss' as *;
 #join{
     background-color: coral;
     height: 730px;
@@ -36,10 +37,25 @@ export default{
     .mail{
         background-image: url(/public/images/banner1-2x.jpg);
         width: 100%;
+        height: 100%;
+        background-position-x: right;
         background-color: purple;
-        height: 670px;
         background-size: cover;
     }
+
+    h3{
+        font-size: 28px;
+    }
+
+    .text-desc{
+      font-size: 58px;
+      line-height: 1.3;
+    }
+
+    .sub-text{
+      color:$color3;
+    }
+
 }
 </style>
 
