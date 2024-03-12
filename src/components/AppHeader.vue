@@ -13,7 +13,7 @@ export default{
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-      <ul class="navbar-nav mb-2 mb-lg-0 d-flex gap-4">
+      <ul class="navbar-nav mb-2 mb-lg-0 d-flex gap-4 align-items-center">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#"></a>
         </li>
@@ -33,12 +33,12 @@ export default{
           <a class="nav-link" href="#">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Store <span class="badge text-bg-secondary">new</span></a>
+          <a class="nav-link" href="#">Store <span class="badge ms-2 rounded-1 py-1 ">new</span></a>
         </li>
         <li class="nav-item">
-          <button class="btn btn-primary rounded-3">Schedule a workout</button>
+          <button class="btn my-btn rounded-pill text-white">Schedule a workout</button>
         </li>
-        <i class="fa-solid fa-cart-shopping text-white align-items-center"></i>
+        <i class="fa-solid fa-cart-shopping text-white align-items-start "></i>
         <i class="fa-solid fa-magnifying-glass text-white align-items-center"></i>
       </ul>
     </div>
@@ -46,36 +46,61 @@ export default{
 </nav>
 <div class="jumbotron d-flex align-items-center">
   <div class="container">
-    <div class="row w-100 h-100">
-      <div class="left col-8  bg-white h-100 bg-transparent text-white">
-        <p>Certified fitness professional</p>
-        <h2>Take control of your health</h2>
-        <div class="">
-          <i class="fa-solid fa-chevron-up"></i>
-          <i class="fa-solid fa-chevron-up"></i>
-          <i class="fa-solid fa-chevron-up"></i>
+    <div class="row w-100 h-100 d-flex align-items-center">
+      <div class="left col-8  bg-white  bg-transparent text-white">
+        <p class="text-1">Certified fitness professional</p>
+        <h2 class="text-2 mb-4">Take control of your health</h2>
+        <div class="mb-4 col-1">
+          <img class="img-fluid" src="/public/images/separator-yellow.png" alt="">
         </div>
-          <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet</p>
-
-        <button class="btn btn-primary">Visit my youtube channel</button>
-        <button class="btn btn-primary">Buy Avada today -></button>
+          <p class="mb-5">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet</p>
+        <button class="btn btn-primary my-btn rounded-pill me-2">Visit my youtube channel</button>
+        <button class="btn btn-primary bg-black rounded-pill">Buy Avada today -></button>
       </div>
-      <div class="right col-4 text-center bg-black h-100 text-white">Right side</div>
+      <div class="right col-4 text-center h-100 text-white">
+        <i class="play-btn fa-solid fa-play p-5 rounded-circle bg-white"></i>
+      </div>
     </div>
   </div>
 </div>
 </template>
 <style lang="scss">
+@use '/src/styles/variables.scss' as *;
 .navbar{
     height: 100px;
-}
+    .badge{
+      background-color: $color6;
+      color: $color1;
+    }
 
+}
+.my-btn {
+    background-color: $color4;
+}
 .jumbotron{
   background-image: url(/public/images/slider82x-scaled.jpg);
     width: 100%;
-    background-color: purple;
     height: 670px;
     background-size: cover;
+    
+    .play-btn{
+      color: $color4;
+      font-size: 17px;
+    }
+
+    .text-1{
+      font-size:27px;
+      color:$color5;
+    }
+
+    .text-2{
+      font-size:75px;
+      color:white;
+    }
+
+
+
+
   }
 
 </style>

@@ -6,11 +6,11 @@ export default{
 
 <template> 
 <div class="container-fluid p-0" id="youtube">
-    <div class="row h-100">
-        <div class="left col-6">
+    <div class="row m-0 h-100">
+        <div class="left col-6 p-0 m-0">
             <img class="img-fluid" src="/public/images/service15-2x.jpg" alt="">
         </div>
-        <div class="right col-6 p-5">
+        <div class="col-6 p-0 m-0">
             <div>Tune up your workouts</div>
             <h3>The best health & fitness advice online</h3>
             <p>Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo integer sit pellentesque.</p>
