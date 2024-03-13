@@ -53,6 +53,7 @@ export default{
         font-size: 23px;
         color:#98939F;
         font-weight: 400;
+        padding-bottom: 20px;
     }
 
     .col-left{
@@ -81,6 +82,10 @@ export default{
 
         .my-btn{
             background-color: red;
+            &:hover{
+                color:white;
+                background-color: #e62117b3;
+            }
         }
 
         .unamed{
