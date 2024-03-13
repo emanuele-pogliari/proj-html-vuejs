@@ -15,7 +15,7 @@ export default{
         <div class="mb-4 col-1">
           <img class="img-fluid" src="/public/images/separator-yellow.png" alt="">
         </div>
-        <input class="form-control w-50 rounded-4 d-inline-block me-3" type="email" placeholder="Insert your mail...">
+        <input class="form-control w-50 rounded-4 d-inline-block me-3" type="email" placeholder="Insert your mail...*">
         <button class="my-btn px-5  btn rounded-pill text-white">Subscribe</button>
         <div class="col-9 mt-3">
           <p class="sub-text">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet, consectetur adipiscing elit sed porttitor lectus.</p>

@@ -25,7 +25,12 @@ a {
     border-radius: 50%;
 }
 
-// .play-btn-small {
-//     color: $color4;
-//     font-size: 17px;
-// }
+.play-btn-small {
+    color: $color4;
+    font-size: 17px;
+    background-color: white;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    padding: 18px 22px;
+}

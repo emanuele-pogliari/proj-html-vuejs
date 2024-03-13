@@ -32,8 +32,8 @@ export default{
             </div>
 
             <div class="card-feat position-relative p-0">
-                <img class="img-fluid" src="/public/images/box3-2x.jpg" alt="">
-                <div class="position-absolute bottom-0 left-0">
+                <img class="position-absolute img-fluid" src="/public/images/box3-2x.jpg" alt="">
+                <div class="my-text-wrap position-absolute bottom-0 left-0">
                     <div class="mb-2 separator-container">
                         <img class="img-fluid mx-auto separator-w" src="/images/separator-white.png" alt="">
                     </div>
@@ -70,12 +70,19 @@ export default{
     .card-feat{
     width: calc(100% / 3 - 25px * 3 / 2);
     overflow: hidden;
+    &:hover{
+        transform: scale(1.1);
+    }
+    &:hover .my-text-wrap{
+        transform: scale(0.9);
+    }
 
         img{
             height: 100%;
             border-radius: 4px;
             border-bottom-right-radius: 40px;
         }
+
     }
 
 .quote-container{

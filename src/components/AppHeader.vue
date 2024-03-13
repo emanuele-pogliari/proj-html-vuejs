@@ -25,7 +25,7 @@ export default{
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-      <ul class="navbar-nav mb-2 mb-lg-0 d-flex gap-3 align-items-center">
+      <ul class="navbar-nav mb-2 mb-lg-0 d-flex gap-4 align-items-center">
         <AppNavLinks v-for="link in store.navLinks" :links="link"></AppNavLinks>
         <li class="nav-item">
           <a class="nav-link" href="#">Store <span class="badge ms-2 rounded-1 py-1 ">new</span></a>
@@ -40,19 +40,20 @@ export default{
   </div>
 </nav>
 <div class="jumbotron d-flex align-items-center">
+  
   <div class="container p-0">
     <div class="row w-100 h-100 d-flex align-items-center">
-      <div class="left col-8 p-0  bg-white  bg-transparent text-white">
+      <div class="left col-9 p-0  bg-white bg-transparent text-white">
         <p class="text-1">Certified fitness professional</p>
         <h2 class="text-2 mb-4">Take control of your health</h2>
         <div class="mb-4 col-1">
           <img class="img-fluid" src="/images/separator-yellow.png" alt="">
         </div>
-          <p class="mb-5">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet</p>
+          <p class="demo-text mb-5">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet</p>
         <button class="btn my-btn yt-btn rounded-pill me-2"><i class="me-2 fa-brands fa-youtube"></i>Visit my youtube channel</button>
-        <button class="btn my-btn buy-btn rounded-pill">Buy Avada today -></button>
+        <button class="my-btn buy-btn rounded-pill"><a>Buy Avada today <i class="ms-1 fa-solid fa-arrow-right"></i></a></button>
       </div>
-      <div class="right col-4 text-center h-100 text-white">
+      <div class="right col-3 text-center h-100 text-white">
         <i class="play-btn-big fa-solid fa-play p-5 rounded-circle bg-white"></i>
       </div>
     </div>
@@ -83,19 +84,16 @@ export default{
       }
     }
 
-    .yt-btn:hover{
-      background-color: $color5;
-    }
+  
 
 }
 .jumbotron{
     width: 100%;
-    height: 670px;
+    padding: 120px;
+    padding-bottom: 190px;
     background-size: cover;
     background-image: linear-gradient(to right, #0d0d0c 35%, transparent 85%), url(/public/images/slider82x-scaled.jpg);
     
-    
-
     .text-1{
       font-size:27px;
       color:$color5;
@@ -106,8 +104,29 @@ export default{
       color:white;
     }
 
+    .demo-text{
+      font-size:23px;
+      color: #D6D5D8BF;
 
+    }
 
+    .yt-btn:hover{
+      color:white;
+      background-color: $color5;
+    }
+
+    .buy-btn{
+      background-color: black;
+      border:2px solid #333333;
+      a{
+        line-height: 21px;
+      }
+
+      &:hover{
+      background-color: white;
+      color:black;
+    }
+  }
 
   }
 
