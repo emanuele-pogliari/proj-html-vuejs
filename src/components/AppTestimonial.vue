@@ -12,10 +12,8 @@ export default{
     <div class="row w-100 h-100 p-5 text-center">
       <div class="left col-6 m-auto bg-white h-100 bg-transparent text-white">
         <p>"I've failed over and over again in my life. And that is why I succeed."</p>
-        <div class="">
-          <i class="fa-solid fa-chevron-up"></i>
-          <i class="fa-solid fa-chevron-up"></i>
-          <i class="fa-solid fa-chevron-up"></i>
+        <div class="mb-4 col-2">
+          <img class="img-fluid" src="/images/separator-yellow.png" alt="">
         </div>
           <p>Arcu auctor gravida nisl, congue sit nisi tincidunt eget proin. In lacinia lacus donec sed massa in ipsum eros, tristique. Gravida suspendisse etiam in iaculis</p>
         <button class="btn btn-primary">Buy Avada today -></button>
