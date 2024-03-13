@@ -10,7 +10,7 @@ export default{
     <div class="row">
         <div class="col d-flex px-0 pb-4 justify-content-between align-items-center ">
             <h3>Featured Playlist</h3>
-            <a class="px-4 py-1">View all videos <i class="ms-2 fa-solid fa-angle-right"></i></a>
+            <a class="px-4 py-1 text-black">View all videos <i class="ms-2 fa-solid fa-angle-right"></i></a>
         </div>
         <div class="video-container p-0 justify-content-between ">
 
@@ -21,7 +21,7 @@ export default{
                 </div>
 
                 <div class="text-box text-center d-flex flex-column mt-4">
-                    <p class="mb-2 fs-4">Thighs & glute workout</p>
+                    <p class="text fs-4">Thighs & glute workout</p>
                     <small class="sub-text fs-5">Increase your mobility</small>
                 </div>
 
@@ -34,7 +34,7 @@ export default{
                 </div>
 
                 <div class="text-box text-center d-flex flex-column mt-4">
-                    <p class="mb-2 fs-4">Lift, firm & perk up</p>
+                    <p class="text fs-4">Lift, firm & perk up</p>
                     <small class="sub-text fs-5">Feel young again</small>
                 </div>
             </div>
@@ -46,7 +46,7 @@ export default{
                 </div>
                 
                 <div class="text-box text-center d-flex flex-column mt-4">
-                    <p class="mb-2 fs-4">Slim & trim your waist</p>
+                    <p class="text fs-4">Slim & trim your waist</p>
                     <small class="sub-text fs-5">Increase your mobility</small>
                 </div>
             </div>
@@ -76,6 +76,13 @@ export default{
             border-bottom-right-radius: 40px;
             overflow: hidden;
         }
+        .text{
+        margin-bottom:0;
+    }
+    .sub-text{
+        color: $color4;
+
+    }
     }
 
     .play-btn-small{
@@ -83,6 +90,8 @@ export default{
         left: 50%;
         transform: translate(-50%,-50%);
     }
+
+    
 
     }
 }

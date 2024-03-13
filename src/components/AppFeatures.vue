@@ -38,7 +38,7 @@ export default{
             <div class="card-feat position-relative p-0">
                 <div class="overlay">
                 <img class="img-fluid img-card" src="/images/box3-2x.jpg" alt="">
-            </div>
+                </div>
                 <div class="my-text-wrap position-absolute bottom-0 left-0">
                     <div class="mb-1">
                     <img class="img-fluid mx-auto separator-w" src="/images/separator-white.png" alt="">

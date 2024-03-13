@@ -21,7 +21,9 @@ export default{
                 </div>
             </div>
             <div class="single-article position-relative">
-                <img class="img-fluid" src="/images/blog1-2x.jpg" alt="">
+                <div class="img-container">
+                    <img class="img-fluid" src="/images/blog1-2x.jpg" alt="">
+                </div>
                 <div class="text-box d-flex flex-column mt-4">
                     <p class="article-title mb-1 fs-4">Ultimate cardio workout</p>
                     <small class="sub-text fs-5">Published On: November 26th, 2019 | 0 Comments</small>
@@ -51,10 +53,12 @@ export default{
    
     .single-article{
         width: calc(100% / 3 - 25px * 3 / 2);
-        img{
-        border-radius: 4px;
+
+    .img-container {
+        position: relative;            
         overflow: hidden;
-        }
+    }
+
 
         .article-title{
             font-weight: 500;

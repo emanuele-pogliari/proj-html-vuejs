@@ -11,7 +11,7 @@ export default{
             <div class="single-card rounded-2  text-center">
             <div class="card-wrapper">
                 <div class="mb-3 mx-auto my-icon">
-                    <img class="img-fluid w-100 h-100" src="/public/images/smartwatch.png" alt="">
+                    <img class="img-fluid w-100 h-100" src="/images/smartwatch.png" alt="">
                 </div>
                 <p class="mb-0 card-title">Team training</p>
                 <small class="sub-title">Find a partner</small>
@@ -21,7 +21,7 @@ export default{
         </div>
         <div class="single-card rounded-2 text-center">
             <div class="card-wrapper">
-            <div class="mb-3 mx-auto my-icon"><img class="img-fluid w-100 h-100" src="/public/images/gym.png" alt=""></div>
+            <div class="mb-3 mx-auto my-icon"><img class="img-fluid w-100 h-100" src="/images/gym.png" alt=""></div>
             <p class="mb-0 card-title">Crossifit workout</p>
             <small class="sub-title">Push your limits</small>
             <p class="my-text">Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.</p>
@@ -31,7 +31,7 @@ export default{
         <div class="single-card rounded-2 text-center">
             <div class="card-wrapper">
             <div class="mb-3 mx-auto my-icon">
-                <img class="img-fluid w-100 h-100" src="/public/images/weight-loss.png" alt="">
+                <img class="img-fluid w-100 h-100" src="/images/weight-loss.png" alt="">
             </div>
             <p class="mb-0 card-title">Weight loss plan</p>
             <small class="sub-title">Shed those pounds</small>
