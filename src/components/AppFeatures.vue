@@ -16,8 +16,8 @@ export default{
                 <div class="my-text-wrap position-absolute bottom-0 left-0">
                     <div class="mb-1">
                     <img class="img-fluid mx-auto separator-w" src="/images/separator-white.png" alt="">
-                    <h4>New gym apparel</h4>
-                    <small>Look good, feel good</small>
+                    <h4>Crossfit workout</h4>
+                    <small>Push your limits</small>
                 </div>
             </div>
             </div>
@@ -42,8 +42,8 @@ export default{
                 <div class="my-text-wrap position-absolute bottom-0 left-0">
                     <div class="mb-1">
                     <img class="img-fluid mx-auto separator-w" src="/images/separator-white.png" alt="">
-                    <h4>New gym apparel</h4>
-                    <small>Look good, feel good</small>
+                    <h4>Team training</h4>
+                    <small>Find a partner</small>
                 </div>
             </div>
             </div>
