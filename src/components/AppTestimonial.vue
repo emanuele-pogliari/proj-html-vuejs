@@ -15,7 +15,7 @@ export default{
           <img class="separator-y" src="/images/separator-yellow.png" alt="">
         </div>
           <p class="demo-text">Arcu auctor gravida nisl, congue sit nisi tincidunt eget proin. In lacinia lacus donec sed massa in ipsum eros, tristique. Gravida suspendisse etiam in iaculis</p>
-        <button class="btn my-btn rounded-pill"><a>Buy Avada today -></a></button>
+        <button class="btn my-btn rounded-pill"><a>Buy Avada today <i class="ms-1 fa-solid fa-angle-right"></i></a></button>
       </div>
     </div>
 </div>
@@ -37,6 +37,7 @@ export default{
 
 .quote{
   font-size: 58px;
+  font-weight: 500;
 }
 
 .my-btn{
@@ -46,6 +47,8 @@ export default{
 .demo-text{
   font-size: 23px;
   color: #D6D5D8BF;
+  margin-bottom: 30px;
+  
 }
 
 .separator-y{

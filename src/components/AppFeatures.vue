@@ -86,11 +86,14 @@ export default{
     }
 
 .quote-container{
-    padding-top: 100px;
+    padding-top: 120px;
 
 .quote{
         font-size:48px;
         line-height: 1.2;
+        font-weight: 500;
+        padding-left: 25px;
+        padding-right:25px;
     }
 
     .info-quote{
@@ -98,15 +101,21 @@ export default{
             width: 60px;
             height: 60px;
             border-radius: 50%;
+            margin-right: 10px;
         }
         .name, .location{
-            padding: 0 10px;
+            margin: 0 10px;
             font-size: 21px;
+        }
+
+        .location{
+            opacity: 0.7;
         }
     }
 
     .separator-y{
         width: 70px;
+        margin-top: 20px;
     }
 }
 }

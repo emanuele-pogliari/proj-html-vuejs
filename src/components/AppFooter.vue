@@ -19,8 +19,9 @@ export default{
 
 <template> 
 <footer id="footer">
-    <div class="container text-center">
-    <div class="footer-top d-flex justify-content-center ">
+    
+    <div class="footer-top">
+        <div class="container text-center d-flex justify-content-center">
         <div class="single-col p-0">
             <img src="/public/images/logo.png" alt="">
             <p class="text-logo">Ac aliquam neque sagittis diam faucibus vitae purus turpis phasellus. Pallentesque consectetur amet purus ultrices mauris.</p>
@@ -45,10 +46,11 @@ export default{
             <p>Email: info@your-company.com</p>
         </div>
     </div>
-    <div class="footer-bottom">
-        <p class="text-bottom">&copy Copyright 2012 - 2020 | Avada Website Builder by ThemeFusion|All Rights Reserved|Powered by WordPress</p>
-    </div>
+    
 </div>
+<div class="footer-bottom text-center">
+        <p class="text-bottom">&copy Copyright 2012 - 2020 | Avada Website Builder by <span>ThemeFusion </span>| All Rights Reserved | Powered by <span>WordPress</span></p>
+    </div>
 </footer> 
 </template>
 
@@ -57,9 +59,8 @@ export default{
 #footer{
     color:white;
     background-color:$color1;
-    height: 665px;
     .footer-top{
-        padding-top: 120px;
+        padding-top: 150px;
         padding-bottom: 110px;
     
         h5{
@@ -76,7 +77,7 @@ export default{
         .text-logo{
             margin-bottom: 50px;
             font-size: 20px;
-            color: $color3;
+            color: #FFFFFFC7
         }
 
         .socials{
@@ -86,14 +87,7 @@ export default{
             color:$color5;
         }
 
-    li{
-        padding-top: 10px;
-        padding-bottom: 10px;
-
-        a{
-            font-size: 20px;
-        }
-    }
+    
 
     .single-col{
         width: calc(100% / 3);
@@ -108,9 +102,14 @@ export default{
 }
 
 .footer-bottom{
+    border-top: 1px solid grey ;
     padding: 20px;
     .text-bottom{
+        color:$color3;
         margin-top: 16px;
+    span{
+        color:white;
+    }
     }
     
 
