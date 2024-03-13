@@ -10,7 +10,7 @@ export default{
     <div class="row">
         <div class="col d-flex px-0 pb-4 justify-content-between align-items-center ">
             <h3>Featured Playlist</h3>
-            <a class="px-3 py-1">View all videos ></a>
+            <a class="px-4 py-1">View all videos <i class="ms-2 fa-solid fa-angle-right"></i></a>
         </div>
         <div class="video-container p-0 justify-content-between ">
 
