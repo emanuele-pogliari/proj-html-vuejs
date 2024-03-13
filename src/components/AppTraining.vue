@@ -9,22 +9,27 @@ export default{
     <div class="container">
         <div class="cards row text-white d-flex flex-row justify-content-between">
             <div class="single-card rounded-2  text-center">
-            <div class="mb-3 mx-auto my-icon">
-                <img class="img-fluid w-100 h-100" src="/public/images/smartwatch.png" alt="">
+            <div class="card-wrapper">
+                <div class="mb-3 mx-auto my-icon">
+                    <img class="img-fluid w-100 h-100" src="/public/images/smartwatch.png" alt="">
+                </div>
+                <p class="mb-0 card-title">Team training</p>
+                <small class="sub-title">Find a partner</small>
+                <p class="my-text">Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.</p>
+                <a href="">Find a partner</a><i class="fa-solid fa-chevron-right"></i>
             </div>
-            <p class="mb-0 card-title">Team training</p>
-            <small class="sub-title">Find a partner</small>
-            <p class="my-text">Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.</p>
-            <a href="">Find a partner</a><i class="fa-solid fa-chevron-right"></i>
         </div>
         <div class="single-card rounded-2 text-center">
+            <div class="card-wrapper">
             <div class="mb-3 mx-auto my-icon"><img class="img-fluid w-100 h-100" src="/public/images/gym.png" alt=""></div>
             <p class="mb-0 card-title">Crossifit workout</p>
             <small class="sub-title">Push your limits</small>
             <p class="my-text">Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.</p>
             <a href="">Learn about crossfit</a><i class="fa-solid fa-chevron-right"></i> 
         </div>
+        </div>
         <div class="single-card rounded-2 text-center">
+            <div class="card-wrapper">
             <div class="mb-3 mx-auto my-icon">
                 <img class="img-fluid w-100 h-100" src="/public/images/weight-loss.png" alt="">
             </div>
@@ -32,6 +37,7 @@ export default{
             <small class="sub-title">Shed those pounds</small>
             <p class="my-text">At laoreet senectus volutpat diam vel sed sed amet pellentesque. Lobortis ut aliquam risus purus. A tellus ut etiam.</p>
             <a href="">Schedule a workout</a><i class="fa-solid fa-chevron-right"></i>
+            </div>
         </div>
     </div>
 </div> 
@@ -47,13 +53,33 @@ export default{
     .cards{
         padding-top: 110px;
         padding-bottom: 120px;
-        gap:50px;
+        gap:25px;
     }
 
     .single-card{
-        width:calc(100% / 3 - 30px * 3 / 2);
-        padding: 70px 40px;
+        width:calc(100% / 3 - 25px * 3 / 2);
+        height:555px;
+        padding: 70px 30px;
         border: 5px solid $color4;
+        position: relative;
+        transition: transform 0.35s ease-in-out;
+    
+
+        &:hover{
+            transform: scale(1.05);
+        }
+
+        &:hover .card-wrapper{
+            transform: scale(0.95);
+
+        }
+
+        .card-wrapper{
+            transition: transform 0.35s ease-in-out;
+            position: absolute;
+            left: 0;
+            padding: 0px 43px;
+        }
 
         .card-title{
             font-size:28px;
@@ -68,6 +94,7 @@ export default{
             font-size:8px;
             margin-left: 10px;
         }
+        
 
     }
 
