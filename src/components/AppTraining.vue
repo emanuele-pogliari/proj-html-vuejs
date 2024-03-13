@@ -16,7 +16,7 @@ export default{
                 <p class="mb-0 card-title">Team training</p>
                 <small class="sub-title">Find a partner</small>
                 <p class="my-text">Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.</p>
-                <a href="">Find a partner</a><i class="fa-solid fa-chevron-right"></i>
+                <a href="">Find a partner</a><i class="ms-2 fa-solid fa-chevron-right"></i>
             </div>
         </div>
         <div class="single-card rounded-2 text-center">
@@ -25,7 +25,7 @@ export default{
             <p class="mb-0 card-title">Crossifit workout</p>
             <small class="sub-title">Push your limits</small>
             <p class="my-text">Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique.</p>
-            <a href="">Learn about crossfit</a><i class="fa-solid fa-chevron-right"></i> 
+            <a href="">Learn about crossfit</a><i class="ms-2 fa-solid fa-chevron-right"></i> 
         </div>
         </div>
         <div class="single-card rounded-2 text-center">
@@ -36,7 +36,7 @@ export default{
             <p class="mb-0 card-title">Weight loss plan</p>
             <small class="sub-title">Shed those pounds</small>
             <p class="my-text">At laoreet senectus volutpat diam vel sed sed amet pellentesque. Lobortis ut aliquam risus purus. A tellus ut etiam.</p>
-            <a href="">Schedule a workout</a><i class="fa-solid fa-chevron-right"></i>
+            <a href="">Schedule a workout</a><i class="ms-2 fa-solid fa-chevron-right"></i>
             </div>
         </div>
     </div>

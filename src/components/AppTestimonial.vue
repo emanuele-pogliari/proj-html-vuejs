@@ -15,7 +15,7 @@ export default{
           <img class="separator-y" src="/images/separator-yellow.png" alt="">
         </div>
           <p class="demo-text">Arcu auctor gravida nisl, congue sit nisi tincidunt eget proin. In lacinia lacus donec sed massa in ipsum eros, tristique. Gravida suspendisse etiam in iaculis</p>
-        <button class="btn my-btn rounded-pill"><a>Buy Avada today <i class="ms-1 fa-solid fa-angle-right"></i></a></button>
+        <button class="btn my-btn buy-btn rounded-pill"><a>Buy Avada today <i class="ms-1 fa-solid fa-angle-right"></i></a></button>
       </div>
     </div>
 </div>
@@ -54,7 +54,14 @@ export default{
 .separator-y{
   width: 70px;
 }
-    
+
+.buy-btn{
+  background-color: $color4;
+  &:hover{
+    background-color: $color2;
+  }  
 }
+}
+    
 </style>
 

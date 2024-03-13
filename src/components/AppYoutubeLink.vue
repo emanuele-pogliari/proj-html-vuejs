@@ -20,14 +20,14 @@ export default{
                 <img class="unamed" src="/public/images/unnamed.jpg" alt="">
                 <div class="d-flex flex-column ">
                     <small>ThemeFusion</small>
-                    <div class="d-flex">
-                        <div>Youtube</div>
-                        <div>999+</div>
+                    <div class="youtube-button d-flex">
+                        <div class="red"><i class="me-1 fa-brands fa-youtube"></i>YouTube</div>
+                        <div class="count">999+</div>
                     </div>
                 </div>
             </div>
             <p class="text-desc">Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo integer sit pellentesque.</p>
-            <button class="btn my-btn rounded-pill"><i class="me-2 fa-brands fa-youtube"></i>Visit my Youtube channel</button>
+            <button class="btn my-btn rounded-pill"><i class="me-1 fa-brands fa-youtube"></i>Visit my Youtube channel</button>
         </div>
     </div>
 </div> 
@@ -52,6 +52,7 @@ export default{
     .text-desc{
         font-size: 23px;
         color:#98939F;
+        font-weight: 400;
     }
 
     .col-left{
@@ -63,21 +64,8 @@ export default{
             top: 42%;
             left:44%;
         }
-    }
 
-    .col-right{
-        width:50%;
-        padding: 135px;
-
-        .my-btn{
-            background-color:$color5;
-        }
-        
-        
-    }
-
-
-    img{
+        img{
         width: 100%;
         height: 100%;
         border-radius: 4px;
@@ -85,10 +73,56 @@ export default{
         object-fit: cover;
         overflow: hidden;
     }
-
-    .unamed{
-        width:41px
     }
+
+    .col-right{
+        width:50%;
+        padding: 135px;
+
+        .my-btn{
+            background-color: red;
+        }
+
+        .unamed{
+        width:41px;
+        height: 100%;
+        object-fit: cover;
+        margin-right:15px;
+    }
+        
+    
+    .youtube-button{
+        border: 1px solid rgba(223, 220, 220, 0.767);
+        border-radius: 1px;
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        margin-bottom: 30px;
+        
+        
+        .red{
+            background-color: #E62117;
+            color:white;
+            vertical-align: middle;
+            padding: 2px 10px;
+        }
+        .count{
+            vertical-align: middle;
+            padding: 2px 5px;
+            color:#98939F;
+        }
+
+    }
+
+  
+
+    }
+
+   
+
+    
+
+
 }
 
 </style>

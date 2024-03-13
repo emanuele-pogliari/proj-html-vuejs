@@ -24,11 +24,11 @@ export default{
                 <img class="img-fluid" src="/public/images/box1-2x.jpg" alt="">
                 <div class="position-absolute bottom-0 left-0">
                     <div class="mb-2">
-                <img class="img-fluid mx-auto separator-w" src="/images/separator-white.png" alt="">
-            </div>
+                    <img class="img-fluid mx-auto separator-w" src="/images/separator-white.png" alt="">
                     <h4>Crossfit Workout</h4>
                     <small>Push your limits</small>
                 </div>
+            </div>
             </div>
 
             <div class="card-feat position-relative p-0">

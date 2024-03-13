@@ -114,20 +114,7 @@ export default{
       color:white;
       background-color: $color5;
     }
-
-    .buy-btn{
-      background-color: black;
-      border:2px solid #333333;
-      a{
-        line-height: 21px;
-      }
-
-      &:hover{
-      background-color: white;
-      color:black;
-    }
-  }
-
+    
   }
 
 

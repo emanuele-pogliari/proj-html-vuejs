@@ -11,10 +11,9 @@ a {
 }
 
 .my-btn {
-    padding: 17px 40px;
+    padding: 16px 39px;
     font-size: 18px;
     background-color: $color4;
-    line-height: 1.4;
     color: white;
 }
 
@@ -33,4 +32,19 @@ a {
     width: 55px;
     height: 55px;
     padding: 18px 22px;
+}
+
+
+.buy-btn {
+    background-color: black;
+    border: 2px solid #333333;
+
+    a {
+        line-height: 21px;
+    }
+
+    &:hover {
+        background-color: white;
+        color: black;
+    }
 }
