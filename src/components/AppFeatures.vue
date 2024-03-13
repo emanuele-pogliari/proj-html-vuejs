@@ -6,31 +6,37 @@ export default{
 
 <template> 
 <div id="features">
-    <div class="container">
-        <div class="row row-feat justify-content-between text-white gap-3 m-0 p-0">
+    <div class="container p-0">
+        <div class="row row-feat justify-content-between text-white p-0">
 
-            <div class="col-3 card-feat position-relative m-0 p-0">
+            <div class="card-feat position-relative p-0 ">
                 <img class="img-fluid" src="/public/images/service6-2x.jpg" alt="">
                 <div class="position-absolute bottom-0 left-0">
-                    <span>chevrons</span><span>chevrons</span><span>chevrons</span>
+                    <div class="mb-2">
+                <img class="img-fluid mx-auto separator-w" src="/images/separator-white.png" alt="">
+            </div>
                     <h4>Crossfit Workout</h4>
                     <small>Push your limits</small>
                 </div>
             </div>
 
-            <div class="col-3 card-feat position-relative">
+            <div class="card-feat position-relative p-0">
                 <img class="img-fluid" src="/public/images/box1-2x.jpg" alt="">
                 <div class="position-absolute bottom-0 left-0">
-                    <span>chevrons</span><span>chevrons</span><span>chevrons</span>
+                    <div class="mb-2">
+                <img class="img-fluid mx-auto separator-w" src="/images/separator-white.png" alt="">
+            </div>
                     <h4>Crossfit Workout</h4>
                     <small>Push your limits</small>
                 </div>
             </div>
 
-            <div class="col-3 card-feat position-relative m-0 p-0">
+            <div class="card-feat position-relative p-0">
                 <img class="img-fluid" src="/public/images/box3-2x.jpg" alt="">
                 <div class="position-absolute bottom-0 left-0">
-                    <span>chevrons</span><span>chevrons</span><span>chevrons</span>
+                    <div class="mb-2 separator-container">
+                        <img class="img-fluid mx-auto separator-w" src="/images/separator-white.png" alt="">
+                    </div>
                     <h4>Crossfit Workout</h4>
                     <small>Push your limits</small>
                 </div>
@@ -38,11 +44,11 @@ export default{
                 <div class="quote-container col-10 px-4 mx-auto text-white d-flex flex-column align-items justify-content-between">
                     <p class="quote text-center ">"How you respond to the challenge in the second half will determine what you become after the game, whether you are a winner or a loser."   
                     </p>
-                        <div class="">
-                            
-                        </div>
+                    <div class="mb-4 text-center">
+                        <img class="img-fluid separator-y" src="/images/separator-yellow.png" alt="">
+                    </div>
                         <div class="info-quote text-center">
-                            <span><img src="/public/images/avatar-1-2x.jpg" alt=""></span>
+                            <span><img src="/images/avatar-1-2x.jpg" alt=""></span>
                             <span class="name">Brad Johnson</span>
                             <span class="location">Las Vegas</span>
                         </div>
@@ -62,7 +68,7 @@ export default{
     }
 
     .card-feat{
-    width: calc(100% / 3 - 30px * 3 / 2);
+    width: calc(100% / 3 - 25px * 3 / 2);
     overflow: hidden;
 
         img{
@@ -74,7 +80,6 @@ export default{
 
 .quote-container{
     padding-top: 100px;
-}
 
 .quote{
         font-size:48px;
@@ -92,5 +97,10 @@ export default{
             font-size: 21px;
         }
     }
+
+    .separator-y{
+        width: 70px;
+    }
+}
 }
 </style>

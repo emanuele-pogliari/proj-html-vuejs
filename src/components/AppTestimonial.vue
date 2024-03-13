@@ -30,8 +30,12 @@ export default{
 <style scoped lang="scss">
 #testimonial{
     height: 775px;
-    background-image: url(/public/images/banner2-2x.jpg);
+    background-image: linear-gradient(180deg, hsla(240, 8%, 3%, calc(100% - 84%)) 0%, #060607 100%), url(/public/images/banner2-2x.jpg);
     width: 100%;
     background-size: cover;
+
+
+    
 }
 </style>
+

@@ -35,7 +35,7 @@ export default{
     height: 730px;
 
     .mail{
-        background-image: url(/public/images/banner1-2x.jpg);
+        background-image: linear-gradient(to right, #0d0d0c 35%, transparent 85%), url(/public/images/banner1-2x.jpg);;
         width: 100%;
         height: 100%;
         background-position-x: right;

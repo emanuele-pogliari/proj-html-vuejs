@@ -92,7 +92,7 @@ export default{
     width: 100%;
     height: 670px;
     background-size: cover;
-    background-image: linear-gradient(to right, #0d0d0c 35%, transparent 85%), url(/public/images/slider82x-scaled.jpg);;
+    background-image: linear-gradient(to right, #0d0d0c 35%, transparent 85%), url(/public/images/slider82x-scaled.jpg);
     
     
 
